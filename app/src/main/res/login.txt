@@ -1,0 +1,3 @@
+professorMatheus@qualifica.com:1234:usuario01
+aluno500@qualifica.com:12345:matheus
+professorAdmin@qualifica.com:1234

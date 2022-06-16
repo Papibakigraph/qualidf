@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:addStatesFromChildren="false"
+    android:background="#0D62B0"
+    android:focusable="auto"
+    tools:context=".perfil">
+
+    <LinearLayout
+        android:id="@+id/lay_pai"
+        android:layout_width="410dp"
+        android:layout_height="443dp"
+        android:layout_marginTop="192dp"
+        android:background="@drawable/radius"
+        android:gravity="clip_vertical|center_vertical|fill_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="clip_horizontal|center_horizontal|fill_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="20dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/viewprofileimage"
+        android:layout_width="114dp"
+        android:layout_height="114dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop"
+        android:tint="#22000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.189"
+        app:srcCompat="@drawable/perfil_radius" />
+
+    <TextView
+        android:id="@+id/name_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name_usuario"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.221" />
+
+    <ImageView
+        android:id="@+id/edit_profile"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:tint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.958"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.219"
+        app:srcCompat="@drawable/edit" />
+
+    <ImageView
+        android:id="@+id/edit_profile2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:tint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.958"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022"
+        app:srcCompat="@drawable/logout" />
+
+    <LinearLayout
+        android:id="@+id/bub_menu"
+        android:layout_width="409dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="450dp"
+        android:background="#FFFFFF"
+        android:gravity="center|center_vertical|fill_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lay_pai">
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/itemMenu0"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:id="@+id/perfilimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    android:tint="#0D62B0"
+                    app:srcCompat="@drawable/profile" />
+
+                <TextView
+                    android:id="@+id/perfil_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Perfil" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/itemMenu1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:id="@+id/perfilimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    android:tint="#0D62B0"
+                    app:srcCompat="@drawable/turmas" />
+
+                <TextView
+                    android:id="@+id/perfil_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Perfil" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/itemMenu2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <ImageView
+                    android:id="@+id/perfilimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    android:tint="#0D62B0"
+                    app:srcCompat="@drawable/home" />
+
+                <TextView
+                    android:id="@+id/perfil_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Perfil" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/itemMenu3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:id="@+id/perfilimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    android:tint="#0D62B0"
+                    app:srcCompat="@drawable/calendario" />
+
+                <TextView
+                    android:id="@+id/perfil_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Perfil" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/itemMenu4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:id="@+id/perfilimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    android:tint="#0D62B0"
+                    app:srcCompat="@drawable/duvidas" />
+
+                <TextView
+                    android:id="@+id/perfil_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Perfil" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
